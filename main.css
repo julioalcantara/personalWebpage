@@ -288,10 +288,22 @@ body {
 }
 
 .projects .project {
-  display: flex;
-  margin-bottom: 100px;
+  width: 100%;
+  display: block;
   margin-left: -5;
-  width: 125%;
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 1280px) {
+  .projects .project {
+    width: 125%;
+  }
+}
+@media screen and (min-width: 780px) {
+  .projects .project {
+    display: flex;
+    margin-bottom: 100px;
+    width: 105%;
+  }
 }
 .projects .project .project__pic {
   max-width: 700px;
@@ -311,9 +323,16 @@ body {
   vertical-align: bottom;
 }
 .projects .project .project__caption {
-  width: 125px;
+  width: 100%;
+  margin-top: 25px;
+  margin-left: 0px;
   flex-shrink: 0;
-  margin-left: 30px;
+}
+@media screen and (min-width: 780px) {
+  .projects .project .project__caption {
+    width: 125px;
+    margin-left: 30px;
+  }
 }
 .projects .project .project__caption .project__name {
   margin-bottom: 10px;
@@ -410,7 +429,7 @@ body {
   border: none;
   position: fixed;
   bottom: 20px;
-  right: 5px;
+  right: 10px;
   cursor: pointer;
 }
 #top-button:hover {
@@ -419,7 +438,6 @@ body {
 @media screen and (min-width: 40rem) {
   #top-button {
     button: 40px;
-    right: 10px;
   }
 }
 #top-button img {

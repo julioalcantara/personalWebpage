@@ -303,10 +303,20 @@ body {
 
 .projects {
     .project {
-        display: flex;
-        margin-bottom: 100px;
+        width: 100%;
+        display: block;
         margin-left: -5;
-        width: 125%;
+        margin-bottom: 70px;
+
+        @media screen and (min-width:1280px){
+            width: 125%;
+        }
+
+        @media screen and (min-width:780px){
+            display: flex;
+            margin-bottom: 100px;
+            width: 105%;
+        }
 
         .project__pic {
             max-width: 700px;
@@ -328,10 +338,16 @@ body {
             }
         }
 
-        .project__caption {
-            width: 125px;
+        .project__caption {   
+            width: 100%;
+            margin-top: 25px;
+            margin-left: 0px;
             flex-shrink: 0;
-            margin-left: 30px;
+
+            @media screen and (min-width:780px){
+                width: 125px;
+                margin-left: 30px;
+            }
 
             .project__name {
                 margin-bottom: 10px;
@@ -432,7 +448,7 @@ body {
     border: none;
     position: fixed;
     bottom:20px;
-    right: 5px;
+    right: 10px;
     cursor: pointer;
     
     &:hover { 
@@ -441,7 +457,6 @@ body {
       
     @media screen and (min-width: $min-width){
         button: 40px;
-        right: 10px;
     }
 
     img {
