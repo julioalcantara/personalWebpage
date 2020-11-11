@@ -90,15 +90,28 @@ body {
 .intro .intro__contact a {
   color: inherit;
 }
+.intro .intro__contact .r-arrow {
+  display: none;
+}
+@media screen and (min-width: 40rem) {
+  .intro .intro__contact .r-arrow {
+    display: inline;
+  }
+}
+@media screen and (min-width: 40rem) {
+  .intro .intro__contact .d-arrow {
+    display: none;
+  }
+}
 .intro .intro__contact img {
-  width: 40px;
+  width: 30px;
   margin-left: 20px;
   margin-right: 10px;
   vertical-align: text-bottom;
 }
 @media screen and (min-width: 40rem) {
   .intro .intro__contact img {
-    width: 55px;
+    width: 30px;
   }
 }
 .intro .intro__contact .highlight__link {
@@ -242,23 +255,30 @@ body {
 }
 .experience .arrow-link {
   color: #36363C;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: all 0.15s ease-in-out;
   background-color: transparent;
   text-decoration: none;
   white-space: nowrap;
 }
-.experience .arrow-link:after {
-  position: relative;
-  bottom: 0.2ex;
-  margin-left: 10px;
-  padding-top: 5px;
-  content: url("images/arrow1.png");
-  color: #E64D00;
-  font-size: 1.5rem;
-  display: inline-block;
+@media screen and (min-width: 40rem) {
+  .experience .arrow-link {
+    font-size: 1.2rem;
+  }
+}
+.experience .arrow-link img {
+  width: 30px;
   vertical-align: middle;
+  margin-left: 10px;
   transition: all 0.15s ease-in-out;
+}
+@media screen and (min-width: 40rem) {
+  .experience .arrow-link img {
+    width: 50px;
+  }
+}
+.experience .arrow-link img:hover {
+  transform: translateX(7px);
 }
 .experience .arrow-link:hover {
   color: #777;
@@ -332,6 +352,7 @@ body {
 }
 .footer .footer__links img {
   display: inline-block;
+  width: 35px;
 }
 @media screen and (min-width: 40rem) {
   .footer .footer__links img {
@@ -343,11 +364,9 @@ body {
   transition: all 0.15s ease-in-out;
   background: 0 0;
   border: none;
-  outline: 0;
-  right: 7px;
   position: fixed;
   bottom: 20px;
-  right: 15px;
+  right: 5px;
   cursor: pointer;
 }
 #top-button:hover {
@@ -355,18 +374,17 @@ body {
 }
 @media screen and (min-width: 40rem) {
   #top-button {
-    button: 20px;
-    right: 7px;
-    width: 35px;
+    button: 40px;
+    right: 10px;
   }
 }
 #top-button img {
-  width: 20px;
+  height: 25px;
   vertical-align: middle;
 }
 @media screen and (min-width: 40rem) {
   #top-button img {
-    width: 25px;
+    height: 40px;
   }
 }
 

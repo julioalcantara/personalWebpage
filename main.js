@@ -4,7 +4,7 @@ const upArrowBtn = document.querySelector('#top-button');
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 400) {
     upArrowBtn.style.display = "block";
   } else {
     upArrowBtn.style.display = "none";
